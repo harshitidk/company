@@ -1,0 +1,22 @@
+{
+  "name": "official-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshitidk/company.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshitidk/company/issues"
+  },
+  "homepage": "https://github.com/harshitidk/company#readme",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

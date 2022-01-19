@@ -231,59 +231,42 @@ a
         display: none;
     }
 
-    // .links li
-    // {
-    //     display: list-item;
-    //     margin: auto;
-    //     margin-top: 120px;
-    //     width: 100px;
-    //     font-size: 20px;
-
-    //     &:hover
-    //     { 
-    //         color: white;
-    //     }
-    // }
-    
-    // .contact
-    // {
-    //     padding: 0px;   
-    //     border: none;     
-    //     visibility: hidden;
-    // }
-
-    // .links-popup
-    // {
-    //     display: none;
-    //     position: absolute;
-    // }
-
-    // .links-pop
-    // {
-    //     position: fixed;
-    //     top: 0;
-    //     bottom: 0;
-    //     right: 0;
-    //     left: 0;
-    //     background-color: black;
-    //     z-index: 100;
-
-    //     li
-    //     {
-    //         display: list-item;
-    //         margin: auto;
-    //         text-align: center;
-    //         margin-top: 120px;
-    //     }
-    // }
-
-
-
-    
     .burger
     {
         display: block;
     }
+}
+
+@media(max-width: 700px)
+{
+    .top-h
+    {
+        width: 300px;
+        font-size: 25px;
+        height: 80px;
+    }
+
+    .top-p
+    {
+        width: 300px;
+
+        &::before
+        {
+            height: 80px;
+        }
+    }
+
+    .top
+    {
+        padding: 30px 50px;
+    }
+
+    .top-head
+    {
+        padding: 50px;
+        height: 400px;
+    }
+    
 }
 
 
@@ -299,6 +282,7 @@ a
 
 .primal
 {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     font-family: $fontm1;
@@ -412,6 +396,52 @@ a
     {
         flex-direction: column;
     }
+}
+
+@media (max-width: 700px)
+{
+
+    .primal
+    {
+        padding: 100px 10px;
+    
+        &-h
+        {
+            font-weight: 600;
+            font-size: 25px;
+    
+            &::before
+            {
+                height: 35px;
+                width: 6px;
+                bottom: 5px;
+                left: -15px;
+            }
+        }
+    
+        &-p
+        {
+            color: rgb(68, 68, 68);
+            font-size: 15px;
+        }
+    
+        &-li
+        {
+    
+            &-div
+            {
+                height: 200px;
+                width: 500px;
+            }
+    
+            &-con
+            {
+                width: 300px;
+                margin-left: 30px;
+            }
+        }
+    }
+    
 }
 
 

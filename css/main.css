@@ -419,4 +419,115 @@ a {
 .hover:hover {
   cursor: pointer;
 }
+
+.mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  position: relative;
+}
+
+.mission-div {
+  position: relative;
+  width: 50%;
+}
+
+.mission-img {
+  background-image: url("../assets/images/img-bg2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.mission-con {
+  background-color: #0e1313;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 100px 20px;
+}
+
+.mission-con-h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mission-con-h1::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 5px;
+  left: 200px;
+  top: 120px;
+  background-color: #ffa600;
+}
+
+.mission-con-h2 {
+  word-spacing: 2px;
+  color: #ffa600;
+  font-weight: bold;
+}
+
+.mission-con-p {
+  width: 300px;
+  word-spacing: 2px;
+  font-size: 12px;
+}
+
+.mission-con-b {
+  color: #ffa600;
+  font-size: 14px;
+  padding: 10px 25px;
+  width: 80px;
+  text-align: center;
+  border: solid 1px #ffa600;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.mission-con-b:hover {
+  background-color: #ffa600;
+  color: black;
+}
+
+.mission-margin {
+  margin-left: 200px;
+}
+
+@media (max-width: 1000px) {
+  .mission {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 800px;
+  }
+  .mission-div {
+    position: relative;
+    width: auto;
+    height: 50%;
+  }
+  .mission-con-h1 {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+  .mission-con-h1::before {
+    height: 30px;
+    width: 5px;
+    left: 100px;
+    top: 118px;
+  }
+  .mission-margin {
+    margin-left: 80px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -378,7 +378,7 @@ a {
 
 @media (max-width: 700px) {
   .primal {
-    padding: 100px 10px;
+    padding: 100px 20px;
   }
   .primal-h {
     font-weight: 600;
@@ -394,13 +394,25 @@ a {
     color: #444444;
     font-size: 15px;
   }
-  .primal-li-div {
-    height: 200px;
-    width: 500px;
-  }
   .primal-li-con {
-    width: 300px;
-    margin-left: 30px;
+    width: 250px;
+    margin-left: 20px;
+  }
+  .con-h {
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 15px;
+  }
+  .con-h::before {
+    height: 24px;
+    bottom: 0px;
+  }
+  .con-p {
+    font-size: 10px;
+    line-height: 2;
+    color: #585858;
   }
 }
 

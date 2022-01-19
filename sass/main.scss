@@ -403,7 +403,7 @@ a
 
     .primal
     {
-        padding: 100px 10px;
+        padding: 100px 20px;
     
         &-h
         {
@@ -427,20 +427,40 @@ a
     
         &-li
         {
-    
-            &-div
-            {
-                height: 200px;
-                width: 500px;
-            }
-    
             &-con
             {
-                width: 300px;
-                margin-left: 30px;
+                width: 250px;
+                margin-left: 20px;
             }
         }
     }
+
+
+    .con
+    {
+        &-h
+        {
+            font-size: 14px;
+            font-weight: 600;
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 15px;
+    
+            &::before
+            {
+                height: 24px;
+                bottom: 0px;
+            }
+        }
+    
+        &-p
+        {
+            font-size: 10px;
+            line-height: 2;
+            color: rgb(88, 88, 88);
+        }
+    }
+    
     
 }
 

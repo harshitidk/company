@@ -470,4 +470,143 @@ a
     cursor: pointer;
 }
 
+///////////////////////////////////
+// top done
+// top done
+// top done
+// top done
+// top done
+// top done
+// top done
+// top done
+// top done
+// top done
+// top done
+// top done
+//////////////////////////////////
 
+.mission
+{
+    display: flex;
+    height: 500px;
+    position: relative;
+
+    &-div 
+    {
+        position: relative;
+        width: 50%;
+    }
+
+    &-img
+    {
+        background-image: url('../assets/images/img-bg2.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-con
+    {
+        background-color: $col6;
+        font-family: $fontm2;
+        color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 100px 20px;
+
+        &-h1
+        {
+            font-size: 30px;
+            font-weight: bold;
+
+            &::before
+            {
+                content: '';
+                position: absolute;
+                height: 30px;
+                width: 5px;
+                left: 200px;
+                top: 120px;
+                background-color: $col2;
+            }
+        }
+
+        &-h2
+        {
+            word-spacing: 2px;
+            color: $col2;
+            font-weight: bold;
+        }
+
+        &-p
+        {
+            width: 300px;
+            word-spacing: 2px;
+            font-size: 12px;
+        }
+
+        &-b
+        {
+            color: $col2;
+            font-size: 14px;
+            padding: 10px 25px;
+            width: 80px;
+            text-align: center;
+            border: solid 1px $col2;
+            // border-radius: 10px;
+            transition: all 0.3s ease 0s;
+
+            &:hover
+            {
+                background-color: $col2;
+                color: black;
+            }
+        }
+    }
+
+    &-margin
+    {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width:1000px)
+{
+
+    .mission
+    {
+        flex-direction: column;
+        height: 800px;
+    
+        &-div 
+        {
+            position: relative;
+            width: auto;
+            height: 50%;
+        }
+    
+        &-con
+        {
+            &-h1
+            {
+                font-size: 22px;
+                padding-left: 20px;
+    
+                &::before
+                {
+                    height: 30px;
+                    width: 5px;
+                    left: 100px;
+                    top: 118px;
+                }
+            }
+        }
+    
+        &-margin
+        {
+            margin-left: 80px;
+        }
+    }
+    
+}

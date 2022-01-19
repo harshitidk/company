@@ -1,10 +1,15 @@
 function slide()
 {
     var burger = document.querySelector('.burger');
-    var links = document.querySelector('.links');
+    var links = document.querySelector('.links-popup');
 
     burger.addEventListener('click', function(){
-        links.classList.toggle('toggle-links');
+        links.style.display = 'block';
+    })
+
+    links.addEventListener('click', function()
+    {
+        links.style.display = 'none';
     })
 }
 

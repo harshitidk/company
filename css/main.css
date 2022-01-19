@@ -33,7 +33,6 @@ a {
 }
 
 .top {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,6 +44,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  position: relative;
 }
 
 .logo {
@@ -94,6 +94,7 @@ a {
 
 .links {
   z-index: 100;
+  display: block;
 }
 
 .links li {
@@ -123,8 +124,6 @@ a {
 }
 
 .top-head {
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   padding: 80px;
   height: 500px;
   display: -webkit-box;
@@ -183,6 +182,32 @@ a {
   color: black;
 }
 
+.links-popup {
+  display: none;
+  position: absolute;
+}
+
+.links-pop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  z-index: 100;
+}
+
+.links-pop li {
+  display: list-item;
+  margin: auto;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.links-pop li:hover {
+  color: #ffa600;
+}
+
 .bur {
   height: 2px;
   width: 20px;
@@ -196,54 +221,7 @@ a {
 
 @media (max-width: 1000px) {
   .links {
-    position: absolute;
-    right: 0;
-    top: 100px;
-    background-color: #ffa600;
-    color: black;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  .toggle-links {
-    -webkit-animation: slide 0.5s forwards ease 0s;
-            animation: slide 0.5s forwards ease 0s;
-  }
-  @-webkit-keyframes slide {
-    from {
-      opacity: 0;
-      -webkit-transform: translateX(50%);
-              transform: translateX(50%);
-    }
-    to {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-    }
-  }
-  @keyframes slide {
-    from {
-      opacity: 0;
-      -webkit-transform: translateX(50%);
-              transform: translateX(50%);
-    }
-    to {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-    }
-  }
-  .links li {
-    display: list-item;
-    margin-top: 100px;
-    width: 100px;
-  }
-  .links li:hover {
-    color: white;
-  }
-  .contact {
-    padding: 0px;
-    border: none;
-    visibility: hidden;
+    display: none;
   }
   .burger {
     display: block;

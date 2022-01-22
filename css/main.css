@@ -125,7 +125,7 @@ a {
 
 .top-head {
   padding: 80px;
-  height: 500px;
+  height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,7 +266,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 0px;
+  padding: 120px 0px;
 }
 
 .primal-h {
@@ -506,9 +506,9 @@ a {
 @media (max-width: 1000px) {
   .mission {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     height: 800px;
   }
   .mission-div {
@@ -528,6 +528,172 @@ a {
   }
   .mission-margin {
     margin-left: 80px;
+  }
+}
+
+.market {
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 100px 0px;
+  background: silver;
+  overflow-x: hidden;
+}
+
+.market-h {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.market-h::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 8px;
+  left: -20px;
+  bottom: 5px;
+  background-color: #ffa600;
+}
+
+.market-p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.market-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.market-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.market-div-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 150px;
+  overflow: hidden;
+  background-color: #1d1d1d;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.market-div-logo i {
+  color: #ffa600;
+}
+
+.market-div-con-h {
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.market-div-con-p {
+  font-size: 14px;
+  color: #3b3b3b;
+  margin-left: 20px;
+  width: 250px;
+}
+
+.market-right {
+  margin-right: 50px;
+}
+
+.market-left {
+  margin-left: 50px;
+}
+
+.market-b {
+  padding: 12px 45px;
+  border: solid 1px black;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.market-b:hover {
+  background-color: black;
+  color: silver;
+}
+
+@media (max-width: 700px) {
+  .market {
+    padding: 100px 0px;
+  }
+  .market-h {
+    font-size: 25px;
+  }
+  .market-h::before {
+    bottom: 0px;
+  }
+  .market-p {
+    font-size: 15px;
+    margin-bottom: 60px;
+  }
+  .market-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .market-div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.2);
+    border-right: solid 2px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-top: solid 2px rgba(0, 0, 0, 0.2);
+    border-left: solid 2px rgba(0, 0, 0, 0.2);
+  }
+  .market-div-con-h {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .market-div-con-p {
+    font-size: 12px;
+    color: #3b3b3b;
+    margin-left: 20px;
+    width: 250px;
+  }
+  .market-right {
+    margin-right: 0px;
+  }
+  .market-left {
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */

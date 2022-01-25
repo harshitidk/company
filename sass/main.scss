@@ -209,7 +209,6 @@ a
     }
 }
 
-
 .bur
 {
     height: 2px;
@@ -591,14 +590,14 @@ a
             &-h1
             {
                 font-size: 22px;
-                padding-left: 20px;
+                padding-left: 0px;
     
                 &::before
                 {
-                    height: 30px;
-                    width: 5px;
-                    left: 100px;
-                    top: 118px;
+                    height: 0;
+                    width: 0;
+                    left: 0;
+                    top: 0;
                 }
             }
         }
@@ -800,4 +799,196 @@ a
             margin-left: 0px;
         }
     }            
+}
+
+// interested part begins 
+// interested part begins 
+// interested part begins 
+// interested part begins 
+// interested part begins 
+// interested part begins 
+// interested part begins 
+// interested part begins 
+// interested part begins 
+
+.interested 
+{
+    display: flex;
+    // background-image: url('../assets/images/img3.jpg');
+    // background-size: cover;
+    // background-position: center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+    color: white;
+    font-family: $fontm2;
+
+    &-dark 
+    {
+        background-color: black;
+        opacity: .4;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    &-t
+    {
+        z-index: 2;
+        font-size: 32px;
+        font-weight: 600;
+        position: relative;
+        margin-bottom: 25px;
+
+        span 
+        {
+            border-bottom: solid 5px $col2;
+        }
+
+        // &::before
+        // {
+        //     content: '';
+        //     height: 28px;
+        //     bottom: 5px;
+        //     width: 8px;
+        //     position: absolute;
+        //     left: -15px;
+        //     background-color: $col2;
+        // }
+    }
+
+    &-p
+    {
+        font-size: 20px;
+        z-index: 2;
+        margin-bottom: 30px;
+    }
+
+    &-b
+    {
+        z-index: 2;
+        padding: 10px 50px;
+        // font-weight: bold;
+        font-size: 18px;
+        border: solid 1px white;
+        transition: all 0.3s ease 0s;
+
+        &:hover
+        {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.last
+{
+    background-color: #181818;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    padding: 40px 0px;
+    font-family: $fontm2;
+
+    &-logo
+    {
+        font-size: 25px;
+        position: relative;
+        margin-bottom: 15px;
+
+        span 
+        {
+            position: relative;
+            font-size: 38px;
+            left: 8px;
+
+            &::before
+            {
+                content: '';
+                position: absolute;
+                height: 35px;
+                left: -12px;
+                width: 5px;
+                bottom: 5px;
+                background-color: $col2;
+            }
+        }
+    }
+
+    &-list
+    {
+        margin-bottom: 20px;
+        display: flex;
+
+        div 
+        {
+            height: 28px;
+            width: 28px;
+            border-radius: 100px;
+            background-color: rgb(212, 212, 212);
+            margin: 0px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-right
+    {
+        color: rgb(209, 209, 209);
+    }
+}
+
+.fab
+{
+    color: #181818;
+}
+
+@media (max-width: 700px)
+{
+    .interested 
+    {
+        padding: 200px 0px;
+    
+        &-t
+        {
+            font-size: 25px;
+            margin-bottom: 25px;
+    
+            span 
+            {
+                border-bottom: solid 5px $col2;
+            }
+        }
+    
+        &-p
+        {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    
+        &-b
+        {
+            padding: 10px 50px;
+            font-size: 15px;
+        }
+    } 
+    
+    .last
+    {
+        &-right
+        {
+            font-size: 15px;
+        }
+    }
 }
